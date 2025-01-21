@@ -1,0 +1,4 @@
+-calc fonksiyonu kullanılıyor:
+- otomatik olarak top margin ayarlanıyor
+- nav menu hep ortada hizalı kalıyor.
+- float right ile logo'yu serbestçe hizalanabilir.
