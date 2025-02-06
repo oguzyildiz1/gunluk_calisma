@@ -8,6 +8,7 @@ how to center blck level elements
 ### 04.02.2025
 how to center flex child elements
 tip: give flex-wrap: wrap to align vertically
+boostrap
 
 ### 05.02.2025
 Youtube video on adobe xd! (will practice later)
