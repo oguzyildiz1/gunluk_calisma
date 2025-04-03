@@ -1,0 +1,9 @@
+img {
+    display: block;
+    opacity: 1;
+    filter: contrast(90%);
+    filter:brightness(80%);
+    filter:drop-shadow(50%);
+    /* filter:saturate(); */
+    /* filter:blur(50%); */
+}
