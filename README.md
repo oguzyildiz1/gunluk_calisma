@@ -16,3 +16,6 @@ https://www.youtube.com/watch?v=8EFz21Mk_wI
 
 #### adobe share:
 https://xd.adobe.com/view/002493d7-3b13-4610-84e2-72fa9f34fff6-5577/
+
+### 06.02.2025
+changing a node list to an array for use of .forEach()

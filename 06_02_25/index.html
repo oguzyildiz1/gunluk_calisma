@@ -13,9 +13,6 @@
 </head>
 
 <body>
-
-
-
     <div>
         <h2>Lorem.</h2>
         <h1>Lorem.</h1>
@@ -40,8 +37,28 @@
         console.log((tag1[0].classList.value));
         tag1[0].classList.add("ulList");
         tag1[0].classList.remove("ulList");
+        /*  */
         console.log(tag1[0].classList.contains("test1"));
-        tag1[0].classList.forEach;
+
+
+
+        /* this is a node list not an array */
+        var li = document.getElementsByTagName("li");
+        console.log(li);
+
+
+        /* change it to an array */
+        var elementsArray = Array.from(li);
+
+        /* then use it in forEach loop */
+        elementsArray.forEach(item => {
+            item.textContent = "changed";
+            // item.style.color = 'black';
+        });
+
+        /* wt
+
+        li.forEach()
 
     </script>
 </body>
