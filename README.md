@@ -1,6 +1,6 @@
 # gunluk_calisma
 
-the code tries i write daily
+the html codes i write daily
 
 ### 04.11.2024
 About icons

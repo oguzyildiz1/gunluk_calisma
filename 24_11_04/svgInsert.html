@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippets</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.container-main {
+            position: relative;
+            height: 500px;
+        }
+
+        div.logo-container1 {
+            width: 100px;
+            height: 250px;
+            border: 2px solid black;
+            display: hidden;
+        }
+
+        div.back {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            position: absolute;
+            z-index: -1;
+            /* display: ; */
+        }
+
+        div object {
+            position: absolute;
+            background-color: green;
+            z-index: -2;
+        }
+
+        #logo-3 {
+            color: red;
+            background-color: blue;
+        }
+
+        /* 
+        img {
+            width: 120px;
+            margin: auto;
+            text-align: center;
+            background-color: red;
+            fill: black;
+            color: black;
+            border-color: black;
+        }
+
+        div.logo-container {
+            display: inline-block;
+            border: 2px solid gray;
+            background: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+        <h1>Logo 2</h1>
+        <div class="logo-container">
+            <!-- <img src="./asset-2.svg" width="200" /> -->
+            <object data="./asset-2.svg" width="200"></object>
+            <div class="back"></div>
+        </div>
+    </div>
+    <div class="container-main">
+        <h1>Logo 2</h1>
+        <div class="logo-container">
+            <img id="logo-2" src="./asset-2.svg" width="200" />
+            <div class="back"></div>
+        </div>
+    </div>
+    <div class="container-main">
+        <h1>Logo 2</h1>
+        <div class="logo-container">
+            <img id="logo-3" src="./asset3.png" width="200" />
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <img src="./asset1.svg" alt="asset1" /><br />
+    </div> -->
+    <!-- <div>
+        <object data="./asset1.svg" width="50"></object>
+    </div> -->
+</body>
+
+</html>

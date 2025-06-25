@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <style>
+        .ulList {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Lorem.</h2>
+        <h1>Lorem.</h1>
+        <ul class="test colorless" style="color:red">
+            <li id="one">list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+        </ul>
+    </div>
+    <script>
+
+        var its = document.getElementsByTagName('li');
+        var item1 = document.getElementById('one');
+        if (item1.textContent === 'list 1') {
+            console.log("first item" + " " + its.length);
+        }
+        console.log(typeof (item1.textContent));
+        var tag1 = document.getElementsByTagName("ul");
+
+        console.log((tag1[0].style.color));
+        console.log((tag1[0].classList.value));
+        tag1[0].classList.add("ulList");
+        tag1[0].classList.remove("ulList");
+        /*  */
+        console.log(tag1[0].classList.contains("test1"));
+
+
+
+        /* this is a node list not an array */
+        var li = document.getElementsByTagName("li");
+        console.log(li);
+
+
+        /* change it to an array */
+        var elementsArray = Array.from(li);
+
+        /* then use it in forEach loop */
+        elementsArray.forEach(item => {
+            item.textContent = "changed";
+            // item.style.color = 'black';
+        });
+
+        /* wt
+
+        li.forEach() */
+
+    </script>
+</body>
+
+</html>

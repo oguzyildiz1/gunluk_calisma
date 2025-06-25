@@ -1,0 +1,7 @@
+17:43 5.04.2024
+
+include keyword: includes content from other php files to the current file;
+require keyword: does the same thing except it throws fatal error instead of warning. (fatal errors stops the remianing code from executing)
+include_once: tek sefer include eder, variable'lar iki kere çağrılmaz
+
+these keywords can return values or variables to the included page.

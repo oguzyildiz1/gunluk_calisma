@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+
+        :root{
+            --header-height: 50px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 0;
+            margin: ;
+        }
+
+        div.container{
+            background-color: red;
+            padding: 0.5rem;
+            height: var(--header-height) ;
+        }
+
+        #logo{
+            width: 50px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            float: left;
+        }
+
+        .child{
+            display: flex;
+            float: right;
+            /* clear: both; */
+        }
+        .child > div {
+            background-color: green;
+            color: white;
+            width: 80px;
+            height: 50px;
+        }
+
+        .child:after {
+            content: "";
+            clear: both;
+        }
+
+        /* ---- section ---- */
+        section{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="logo">Logo</div>
+        <div class="child">
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+        </div>
+    </div>
+    <section>sec</section>
+        
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 40%;
+            height: 500px;
+            padding: 0.5rem 1rem;
+            box-sizing: border-box;
+            background-color: lightpink;
+            border: 1px solid gray;
+            display: flex;
+            /* wrap özelliği ortalama */
+            flex-flow: wrap column;
+            justify-content: space-evenly;
+            align-content: space-between;
+        }
+
+        .main>div {
+            height: 80px;
+            width: 100%;
+            background-color: lightblue;
+            border: 1px solid #000;
+            border-radius: 1rem;
+        }
+
+        .main>div:nth-child(3) {
+            background-color: #272;
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+
+        .main>div:nth-child(4) {
+            background-color: #272;
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+
+        .main>div:nth-child(5) {
+            background-color: #272;
+            height: auto;
+            width: max-content;
+            padding: 0.5rem 1rem;
+            line-height: 1.2;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            align-content: center;
+            color: white;
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>Kaydet</div>
+    </div>
+
+</body>
+
+</html>
